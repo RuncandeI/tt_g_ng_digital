@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_unboarding_gong (...)
+module tt_um_uwasic_onboarding_gong (
 
   // Add this inside the module block
   assign uio_oe = 8'hFF; // Set all IOs to output
