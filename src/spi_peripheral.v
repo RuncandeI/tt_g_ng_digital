@@ -39,7 +39,7 @@ module spi_peripheral (
             sclk_old  <= 1'b0;
             ncs_old   <= 1'b1;
         end else begin
-            sclk_sync <= {sclk_sync[1:0], sclk_in};
+            sclk_sync <= {sclk_sync[0], sclk_in};
             ncs_sync  <= {ncs_sync[0], ncs_in};
             copi_sync <= {copi_sync[0], copi_in};
             sclk_old  <= sclk_sync[1]; // Stable edge detection for SCLK
